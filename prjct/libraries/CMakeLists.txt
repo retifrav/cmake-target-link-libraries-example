@@ -1,0 +1,2 @@
+add_subdirectory(SomeLibrary)
+add_subdirectory(AnotherLibrary)
