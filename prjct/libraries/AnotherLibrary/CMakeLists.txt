@@ -65,4 +65,11 @@ set(public_headers
     include/another.h
 )
 
+# to guard against against undefined BUILD_SHARED_LIBS inside Config.cmake.in,
+# because without that check you will get a malformed condition
+# when this variable is undefined (which it is by default)
+set(BUILD_SHARED_LIBS_VALUE 0)
+if(DEFINED BUILD_SHARED_LIBS AND BUILD_SHARED_LIBS)
+    set(BUILD_SHARED_LIBS_VALUE 1)
+endif()
 include(Installing)

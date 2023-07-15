@@ -2,7 +2,11 @@
 
 include(CMakeFindDependencyMacro)
 
-if(NOT @BUILD_SHARED_LIBS@ OR NOT @THINGY_LINKING@ STREQUAL PRIVATE)
+if(
+    NOT @BUILD_SHARED_LIBS_VALUE@
+    OR
+    NOT "@THINGY_LINKING@" STREQUAL "PRIVATE"
+)
     find_dependency(Thingy CONFIG REQUIRED)
 endif()
 
