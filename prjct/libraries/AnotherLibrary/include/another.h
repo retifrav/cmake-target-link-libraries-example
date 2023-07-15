@@ -5,7 +5,7 @@ namespace prjct
 {
     namespace lbrAnother
     {
-        void printSomething();
+        void doAnother();
         void doTheThing();
     }
 }

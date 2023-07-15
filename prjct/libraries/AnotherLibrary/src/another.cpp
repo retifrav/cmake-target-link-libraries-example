@@ -10,9 +10,9 @@ namespace prjct
 {
     namespace lbrAnother
     {
-        void printSomething()
+        void doAnother()
         {
-            std::cout << "ololo, " << someString << std::endl;
+            std::cout << "ololo, " << anotherString << std::endl;
         }
 
 #ifndef THINGY_INTERFACE

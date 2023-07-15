@@ -1,3 +1,3 @@
 #include <string>
 
-const std::string someString = "another string here";
+const std::string anotherString = "another string here";

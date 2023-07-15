@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
     std::cout << std::endl;
 
     std::cout << "Direct dependencies:" << std::endl;
-    prjct::lbrSome::printSomething();
-    prjct::lbrAnother::printSomething();
+    prjct::lbrSome::doSome();
+    prjct::lbrAnother::doAnother();
     std::cout << std::endl;
 
     std::cout << "Transitive dependency:" << std::endl;
