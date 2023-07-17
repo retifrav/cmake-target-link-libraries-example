@@ -6,6 +6,6 @@ namespace dpndnc
 {
     void doThingy()
     {
-        std::cout << "well, here's " << someString << std::endl;
+        std::cout << "well, here's " << thingyString << std::endl;
     }
 }
