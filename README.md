@@ -15,7 +15,7 @@ It is 3 projects that are built separately:
 ### dpndnc
 
 ``` sh
-$ cd /path/to/cmake-target-link-libraries-example
+$ cd /path/to/cmake-target-link-libraries-example/dpndnc
 $ mkdir build && cd $_
 $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" ..
 $ cmake --build . --target install
@@ -24,7 +24,7 @@ $ cmake --build . --target install
 ### prjct
 
 ``` sh
-$ cd /path/to/cmake-target-link-libraries-example
+$ cd /path/to/cmake-target-link-libraries-example/prjct
 $ mkdir build && cd $_
 $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/dpndnc/install" -DTHINGY_LINKING="INTERFACE" ..
 $ cmake --build . --target install
@@ -33,7 +33,7 @@ $ cmake --build . --target install
 ### tl
 
 ``` sh
-$ cd /path/to/cmake-target-link-libraries-example
+$ cd /path/to/cmake-target-link-libraries-example/tl
 $ mkdir build && cd $_
 $ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/prjct/install;/path/to/cmake-target-link-libraries-example/dpndnc/install" ..
 $ cmake --build . --target install
