@@ -19,11 +19,11 @@ int main(int argc, char *argv[])
 
     std::cout << "Transitive dependency:" << std::endl;
 #ifndef THINGY_INTERFACE
-    std::cout << "Via AnotherLibrary: ";
+    std::cout << "via AnotherLibrary | ";
     prjct::lbrAnother::doTheThing();
 #endif
 #if defined(THINGY_PUBLIC) || defined(THINGY_INTERFACE)
-    std::cout << "Directly: ";
+    std::cout << "directly | ";
     dpndnc::doThingy();
 #endif
 }
