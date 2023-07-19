@@ -26,7 +26,7 @@ target_include_directories(${PROJECT_NAME}
 
 # without it public headers won't get installed
 set(public_headers
-    include/some.h
+    include/Some/some.h
 )
 
 include(Installing)

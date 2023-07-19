@@ -62,7 +62,7 @@ endif()
 
 # without it public headers won't get installed
 set(public_headers
-    include/another.h
+    include/Another/another.h
 )
 
 # to guard against against undefined BUILD_SHARED_LIBS inside Config.cmake.in,

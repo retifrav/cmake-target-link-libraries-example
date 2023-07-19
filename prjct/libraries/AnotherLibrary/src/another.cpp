@@ -4,6 +4,7 @@
     #include <Thingy/thingy.h>
 #endif
 
+#include <Another/another.h>
 #include "stuff.h"
 
 namespace prjct

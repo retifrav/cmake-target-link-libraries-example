@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include <Thingy/thingy.h>
 #include "stuff.h"
 
 namespace dpndnc
