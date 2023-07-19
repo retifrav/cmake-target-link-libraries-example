@@ -6,11 +6,11 @@ More details in the [following article](https://decovar.dev/blog/2023/07/15/cmak
 
 ## Building
 
-It is 3 projects that are built separately:
+It is 3 projects that are built individually and in particular order:
 
-- `dpndnc` - a library made to be a direct dependency of `prjct`;
-- `prjct` - a project with two libraries, one of which directly depends on `dpndnc`;
-- `tl` - a CLI tool that directly depends on `prjct` libraries and also transitively depends on `dpndnc`.
+1. `dpndnc` - a library made to be a direct dependency of `prjct`;
+2. `prjct` - a project with two libraries, one of which directly depends on `dpndnc`;
+3. `tl` - a CLI tool that directly depends on `prjct` libraries and also transitively depends on `dpndnc`.
 
 ### dpndnc
 
