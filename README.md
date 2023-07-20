@@ -4,6 +4,8 @@ An example of particular effects from `PRIVATE`/`INTERFACE`/`PUBLIC` scope in CM
 
 More details in the [following article](https://decovar.dev/blog/2023/07/15/cmake-target-link-libraries-scope/).
 
+Unlike the code fragments in the article, the `prjct` here handles linking scope via `THINGY_LINKING` cache variable, for example `-DTHINGY_LINKING="INTERFACE"`. Based on that, certain target properties are set and carried over, changing certain compile definitions, making the compilation to account for the current linking scope "automatically" (*so you don't need to modify the sources yourself*).
+
 ## Building
 
 It is 3 projects that are built individually and in particular order:
