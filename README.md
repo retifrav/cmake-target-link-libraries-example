@@ -28,7 +28,10 @@ $ cmake --build . --target install
 ``` sh
 $ cd /path/to/cmake-target-link-libraries-example/prjct
 $ mkdir build && cd $_
-$ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/dpndnc/install" -DTHINGY_LINKING="INTERFACE" ..
+$ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" \
+    -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/dpndnc/install" \
+    -DTHINGY_LINKING="INTERFACE" \
+    ..
 $ cmake --build . --target install
 ```
 
@@ -37,7 +40,9 @@ $ cmake --build . --target install
 ``` sh
 $ cd /path/to/cmake-target-link-libraries-example/tl
 $ mkdir build && cd $_
-$ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/prjct/install;/path/to/cmake-target-link-libraries-example/dpndnc/install" ..
+$ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="../install" \
+    -DCMAKE_PREFIX_PATH="/path/to/cmake-target-link-libraries-example/prjct/install;/path/to/cmake-target-link-libraries-example/dpndnc/install" \
+    ..
 $ cmake --build . --target install
 $ ../install/bin/some-tool
 ```
