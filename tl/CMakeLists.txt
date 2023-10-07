@@ -37,7 +37,7 @@ set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Filename postfix for libraries under D
 # here it's a top-level project, so CMAKE_PROJECT_NAME is fine
 add_executable(${CMAKE_PROJECT_NAME})
 
-set_target_properties(${PROJECT_NAME}
+set_target_properties(${CMAKE_PROJECT_NAME}
     PROPERTIES
         DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX}
 )
